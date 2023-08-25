@@ -19,6 +19,8 @@ By default a `-5` [curve optimization](https://www.amd.com/system/files/document
 
 A much more ambitious `-15` curve optimization is applied in the `experimental` section. This setting might be stable but it might also cause a crash/hang if applied.
 
+The values put into the script is in hexadecimal format and calculated by subtracting from 0x100000. So to get a -5 cure optimization you calculate `0x100000 - 5 = 0xFFFFB`. You can use this nice [hex calculator](https://www.calculator.net/hex-calculator.html?number1=100000&c2op=-&number2=5&calctype=op&x=0&y=0) to determine the values to put into the script.
+
 ## Activation
 
 By default no undervolt is applied until you run either the `on.sh` or the `experimental.sh` scripts:
